@@ -3,23 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		639AB996268095AC0015EAED /* POSForCustomersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639AB995268095AC0015EAED /* POSForCustomersApp.swift */; };
-		639AB998268095AC0015EAED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639AB997268095AC0015EAED /* ContentView.swift */; };
+		639AB998268095AC0015EAED /* CustomerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639AB997268095AC0015EAED /* CustomerView.swift */; };
 		639AB99A268095AE0015EAED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639AB999268095AE0015EAED /* Assets.xcassets */; };
 		639AB99D268095AE0015EAED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639AB99C268095AE0015EAED /* Preview Assets.xcassets */; };
+		639AB9AC2680F2C50015EAED /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 639AB9AB2680F2C50015EAED /* CodeScanner */; };
+		639AB9AE26819C730015EAED /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639AB9AD26819C730015EAED /* ItemCell.swift */; };
+		639AB9B02681A2C40015EAED /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639AB9AF2681A2C40015EAED /* ButtonView.swift */; };
+		639AB9B22681C2DC0015EAED /* Userdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639AB9B12681C2DC0015EAED /* Userdata.swift */; };
+		63AE97AE268488D2005D53EC /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE97AD268488D2005D53EC /* SelectView.swift */; };
+		63AE97B02684C421005D53EC /* StaffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE97AF2684C421005D53EC /* StaffView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		639AB992268095AC0015EAED /* POSForCustomers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POSForCustomers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		639AB995268095AC0015EAED /* POSForCustomersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POSForCustomersApp.swift; sourceTree = "<group>"; };
-		639AB997268095AC0015EAED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		639AB997268095AC0015EAED /* CustomerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerView.swift; sourceTree = "<group>"; };
 		639AB999268095AE0015EAED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		639AB99C268095AE0015EAED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		639AB99E268095AE0015EAED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		639AB9AD26819C730015EAED /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		639AB9AF2681A2C40015EAED /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		639AB9B12681C2DC0015EAED /* Userdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Userdata.swift; sourceTree = "<group>"; };
+		63AE97AD268488D2005D53EC /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
+		63AE97AF2684C421005D53EC /* StaffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639AB9AC2680F2C50015EAED /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +65,12 @@
 			isa = PBXGroup;
 			children = (
 				639AB995268095AC0015EAED /* POSForCustomersApp.swift */,
-				639AB997268095AC0015EAED /* ContentView.swift */,
+				639AB9B12681C2DC0015EAED /* Userdata.swift */,
+				639AB997268095AC0015EAED /* CustomerView.swift */,
+				63AE97AF2684C421005D53EC /* StaffView.swift */,
+				63AE97AD268488D2005D53EC /* SelectView.swift */,
+				639AB9AF2681A2C40015EAED /* ButtonView.swift */,
+				639AB9AD26819C730015EAED /* ItemCell.swift */,
 				639AB999268095AE0015EAED /* Assets.xcassets */,
 				639AB99E268095AE0015EAED /* Info.plist */,
 				639AB99B268095AE0015EAED /* Preview Content */,
@@ -85,6 +102,9 @@
 			dependencies = (
 			);
 			name = POSForCustomers;
+			packageProductDependencies = (
+				639AB9AB2680F2C50015EAED /* CodeScanner */,
+			);
 			productName = POSForCustomers;
 			productReference = 639AB992268095AC0015EAED /* POSForCustomers.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +132,9 @@
 				Base,
 			);
 			mainGroup = 639AB989268095AC0015EAED;
+			packageReferences = (
+				639AB9AA2680F2C50015EAED /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 639AB993268095AC0015EAED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				639AB998268095AC0015EAED /* ContentView.swift in Sources */,
+				639AB9AE26819C730015EAED /* ItemCell.swift in Sources */,
+				639AB9B22681C2DC0015EAED /* Userdata.swift in Sources */,
+				63AE97AE268488D2005D53EC /* SelectView.swift in Sources */,
+				639AB998268095AC0015EAED /* CustomerView.swift in Sources */,
+				63AE97B02684C421005D53EC /* StaffView.swift in Sources */,
+				639AB9B02681A2C40015EAED /* ButtonView.swift in Sources */,
 				639AB996268095AC0015EAED /* POSForCustomersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		639AB9AA2680F2C50015EAED /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		639AB9AB2680F2C50015EAED /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 639AB9AA2680F2C50015EAED /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 639AB98A268095AC0015EAED /* Project object */;
 }

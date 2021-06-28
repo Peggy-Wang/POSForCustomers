@@ -11,7 +11,8 @@ import SwiftUI
 struct POSForCustomersApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SelectView()
+            // CustomerView().environmentObject(Userdata())
         }
     }
 }

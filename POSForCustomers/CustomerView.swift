@@ -27,7 +27,7 @@ struct CustomerView: View {
                 
                 Spacer()
                 Text("商品列表")
-                    .fontWeight(.bold)
+                    .bold()
                 
                 Spacer()
                 Image(systemName: "gearshape")
